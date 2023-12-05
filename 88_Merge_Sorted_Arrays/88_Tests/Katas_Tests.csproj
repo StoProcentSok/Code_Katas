@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\88_Merge_Sorted_Arrays.csproj" />
+    <ProjectReference Include="..\Katas.csproj" />
   </ItemGroup>
 
 </Project>
