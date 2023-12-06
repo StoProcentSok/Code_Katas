@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Katas
+﻿namespace Katas
 {
     public class _27_Remove_Element
     {
@@ -30,7 +24,6 @@ namespace Katas
                 else
                 {
                     continue;
-
                 }
             }
 
