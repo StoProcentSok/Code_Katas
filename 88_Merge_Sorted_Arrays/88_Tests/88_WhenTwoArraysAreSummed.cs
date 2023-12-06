@@ -2,7 +2,7 @@
 using FluentAssertions;
 using Katas;
 
-namespace _88_Tests
+namespace Kata_Tests
 {
     [TestFixture]
     public class WhenTwoArraysAreSummed
