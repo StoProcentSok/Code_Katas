@@ -5,7 +5,7 @@ using Katas;
 namespace Kata_Tests
 {
     [TestFixture]
-    public class WhenTwoArraysAreSummed
+    public class _88_WhenTwoArraysAreSummed
     {
         [Test]
         //[TestCase(new int[] { 1, 2, 3, 0, 0, 0 }, 6, new int[] { 2, 5, 6 }, 3, new int[] { 1, 2, 2, 3, 5, 6 })]

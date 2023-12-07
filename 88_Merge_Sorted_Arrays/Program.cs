@@ -7,10 +7,3 @@ class Program
         
     }
 }
-
-public class Solution
-{
-    
-}
-
-
