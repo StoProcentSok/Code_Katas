@@ -1,11 +1,6 @@
 ﻿using Katas;
 using NUnit.Framework;
-using System;
 using FluentAssertions;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kata_Tests
 {
@@ -15,6 +10,8 @@ namespace Kata_Tests
         [Test]
         [TestCase(new int[] {3, 2, 3}, 3)]
         [TestCase(new int[] {2, 2, 1, 1, 2, 2}, 2)]
+        [TestCase(new int[] {2}, 2)]
+        [TestCase(new int[] {6, 5, 6, 5, 5, 7}, 5)]
         public void Then_Majority_Element_Is_Returned(int[] nums, int expected)
         {
             var Kata = new _169_Majority_Elements();

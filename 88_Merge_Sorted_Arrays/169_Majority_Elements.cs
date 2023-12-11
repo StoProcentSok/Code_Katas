@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Utils;
 
 namespace Katas
 {
@@ -10,7 +6,10 @@ namespace Katas
     {
         public int MajorityElement(int[] nums)
         {
-            return 0;
+            Quick_Sort.QuickSort(nums,0, nums.Length - 1);
+
+            var midPoint = nums.Length % 2 == 0 ? (nums.Length / 2 - 1) : nums.Length / 2;
+            return nums[midPoint];
         }
     }
 }
