@@ -7,14 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="88_Tests\**" />
-    <EmbeddedResource Remove="88_Tests\**" />
-    <None Remove="88_Tests\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Utils\Utils\Utils.csproj" />
-  </ItemGroup>
-
 </Project>
