@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Katas
 {
-    public class _4_Add_Two_Numbers
+    public class _2_Add_Two_Numbers
     {
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
