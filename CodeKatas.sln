@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Katas", "88_Merge_Sorted_Arrays\Katas.csproj", "{03027E30-E542-48A6-B7D5-FE78A7F7E46A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kata", "Kata", "{DC003629-9666-44F4-993C-C3D0D675BE97}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Katas_Tests", "88_Merge_Sorted_Arrays\88_Tests\Katas_Tests.csproj", "{AE1FD130-C92C-4897-856B-3982C0AB4B4B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{3D696FE1-A4B1-429D-B9A6-7EECF8E75A0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils\Utils.csproj", "{31D66CAB-528A-45AA-B695-89F41AD8EA6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils\Utils.csproj", "{31D66CAB-528A-45AA-B695-89F41AD8EA6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Katas", "Katas\Katas.csproj", "{388C587C-DD75-484B-A8B3-891E8D009CB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Katas_Tests", "Katas_Tests\Katas_Tests.csproj", "{9F1C0A97-B238-4EEA-9054-034D7D01E40F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,26 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03027E30-E542-48A6-B7D5-FE78A7F7E46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03027E30-E542-48A6-B7D5-FE78A7F7E46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03027E30-E542-48A6-B7D5-FE78A7F7E46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03027E30-E542-48A6-B7D5-FE78A7F7E46A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE1FD130-C92C-4897-856B-3982C0AB4B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE1FD130-C92C-4897-856B-3982C0AB4B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE1FD130-C92C-4897-856B-3982C0AB4B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE1FD130-C92C-4897-856B-3982C0AB4B4B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{31D66CAB-528A-45AA-B695-89F41AD8EA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{31D66CAB-528A-45AA-B695-89F41AD8EA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31D66CAB-528A-45AA-B695-89F41AD8EA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31D66CAB-528A-45AA-B695-89F41AD8EA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388C587C-DD75-484B-A8B3-891E8D009CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388C587C-DD75-484B-A8B3-891E8D009CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388C587C-DD75-484B-A8B3-891E8D009CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388C587C-DD75-484B-A8B3-891E8D009CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F1C0A97-B238-4EEA-9054-034D7D01E40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1C0A97-B238-4EEA-9054-034D7D01E40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1C0A97-B238-4EEA-9054-034D7D01E40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1C0A97-B238-4EEA-9054-034D7D01E40F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{03027E30-E542-48A6-B7D5-FE78A7F7E46A} = {DC003629-9666-44F4-993C-C3D0D675BE97}
-		{AE1FD130-C92C-4897-856B-3982C0AB4B4B} = {DC003629-9666-44F4-993C-C3D0D675BE97}
 		{31D66CAB-528A-45AA-B695-89F41AD8EA6A} = {3D696FE1-A4B1-429D-B9A6-7EECF8E75A0B}
+		{388C587C-DD75-484B-A8B3-891E8D009CB5} = {DC003629-9666-44F4-993C-C3D0D675BE97}
+		{9F1C0A97-B238-4EEA-9054-034D7D01E40F} = {DC003629-9666-44F4-993C-C3D0D675BE97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0832E44B-B1C6-4C5E-925E-51E9495A2594}
