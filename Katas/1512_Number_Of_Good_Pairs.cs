@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Katas
+﻿namespace Katas
 {
     public class _1512_Number_Of_Good_Pairs
     {

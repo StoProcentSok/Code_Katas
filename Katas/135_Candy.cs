@@ -1,29 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Katas
+﻿namespace Katas
 {
     public class _135_Candy
     {
         public int Candy(int[] ratings)
         {
-            var candiesGiven = 0;
-            var candiesGivenToPrevious = 0;
-            for (int i = 0; i < ratings.Length; i++)
+            var candiesForKids = new int[ratings.Length];
+            Array.Fill(candiesForKids, 1);
+ 
+            for (int i = 1; i < ratings.Length; i++)
             {
-                if (i == 0)
+                if (ratings[i-1] < ratings[i])
                 {
-                    if (ratings[i +1] > ratings[i])
-                    {
-                        
-                    }
+                    candiesForKids[i] = candiesForKids[i - 1] + 1;
                 }
             }
 
-            return candiesGiven;
+            for (int j = ratings.Length - 2; j >= 0 ; j--)
+            {
+                if (ratings[j] > ratings[j + 1])
+                {
+                    candiesForKids[j] = (candiesForKids[j+1] + 1 > candiesForKids[j]) 
+                        ? candiesForKids[j + 1] + 1 
+                        : candiesForKids[j];
+                }
+            }
+
+            return candiesForKids.Sum();
+            
         }
     }
 }
