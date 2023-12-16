@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Katas
+﻿namespace Katas
 {
     public class _28_Find_Index_Of_First_Occurence
     {
