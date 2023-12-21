@@ -11,12 +11,11 @@ namespace Kata_Tests
 {
     public class TestData
     {
-        //public static IEnumerable<int[,]> TestMatrices()
-        //{
-        //    //yield return new int[3, 3] { { 100, 200, 100 }, { 200, 50, 200 }, { 100, 200, 100 } };
-        //    //yield return new TestCaseData(new int[3, 3] { { 100, 200, 100 }, { 200, 50, 200 }, { 100, 200, 100 } })
-        //    //    .Returns(new int[3, 3]{ { 100, 200, 100 }, { 200, 50, 200 }, { 100, 200, 100 } }) ;
-        //}
+        public static IEnumerable<TestCaseData> TestMatrices()
+        {
+            yield return new TestCaseData(new int[3][] { new[] { 100, 200, 100 }, new[] { 200, 50, 200 }, new[] { 100, 200, 100 } },
+                                          new int[3][] { new[] { 137, 141, 137 }, new[] { 141, 138, 141 }, new[] { 137, 141, 137 } });
+        }
     }
 
     [TestFixture]
@@ -24,19 +23,13 @@ namespace Kata_Tests
     public class _661_When_Image_Array_Is_Given
     {
         [Test]
-       
-        public void Then_Smooth_Image_Array_Is_Returned()
+        [TestCaseSource(typeof(TestData), nameof(TestData.TestMatrices))]
+        public void Then_Smooth_Image_Array_Is_Returned(int[][] inputArray, int[][] expectedArray)
         {
-            int[][] inputArray =  [ [ 100, 200, 100 ], [ 200, 50, 200 ], [ 100, 200, 100 ] ];
-
-
-            int [][] expectedArray = [ [ 137, 141, 137 ], [ 141, 138, 141 ], [ 137, 141, 137 ] ];
-
             var kata = new _661_Image_Smoother();
             var result = kata.ImageSmoother(inputArray);
 
             result.Should().BeEquivalentTo(expectedArray);
-
         }
     }
 }
