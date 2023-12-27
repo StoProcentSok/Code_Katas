@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Kata_Tests
 {
-    public class TestData
+    public class _661_TestData
     {
         public static IEnumerable<TestCaseData> TestMatrices()
         {
@@ -23,7 +23,7 @@ namespace Kata_Tests
     public class _661_When_Image_Array_Is_Given
     {
         [Test]
-        [TestCaseSource(typeof(TestData), nameof(TestData.TestMatrices))]
+        [TestCaseSource(typeof(_661_TestData), nameof(_661_TestData.TestMatrices))]
         public void Then_Smooth_Image_Array_Is_Returned(int[][] inputArray, int[][] expectedArray)
         {
             var kata = new _661_Image_Smoother();
