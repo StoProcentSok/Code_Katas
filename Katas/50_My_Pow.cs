@@ -1,38 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Katas
+﻿namespace Katas
 {
     public class _50_My_Pow
     {
         public double MyPow(double x, int n)
         {
-            double result = 1;
-            if (n == 0) return result;
+            long longN = n;
+            double longX = x;
 
-            if (n < 0)
+            if (longN == 1)
             {
-                n = Math.Abs(n);
-                x = 1 / x;
+                return x;
+            }
+            if (longN == 0)
+            {
+                return 1;
             }
 
-            double product = x;
-
-            while(n > 0)
+            if (longN < 0)
             {
-                if (n % 2 == 1)
-                {
-                    result = result * product;
-                }
-                product = product * product;
-                n = n / 2;
+                longN = Math.Abs(longN);
+                longX = 1 / longX;
             }
 
-            return result;
-
+            return Pow(longX, longN);
         }
+
+        private double Pow(double x, long n)
+        {
+            if (n == 1)
+            {
+                return x;
+            }
+            var halfedPow = Pow(x, n / 2);
+            return n % 2 == 0 ? halfedPow * halfedPow : halfedPow * halfedPow * x;
+        }
+
     }
 }
