@@ -13,20 +13,18 @@ namespace Katas
             var result = new int[nums.Length];
             Array.Fill(result, 1);
 
-            var i = 0;
-            while (i < nums.Length)
+            var prefix = 1;
+            for (int i = 0; i < nums.Length; i++)
             {
-                for (var j = i - 1; j > -1; j--)
-                {
-                    result[i] = result[i] * nums[j];
-                }
+                result[i] = prefix;
+                prefix *= nums[i];
+            }
 
-                for (var j = i + 1; j < nums.Length; j++)
-                {
-                    result[i] = result[i] * nums[j];
-                }
-
-                i++;
+            var postfix = 1;
+            for (int i = nums.Length - 1; i > -1; i--)
+            {
+                result[i] = result[i] * postfix;
+                postfix *= nums[i];
             }
             return result;
         }
